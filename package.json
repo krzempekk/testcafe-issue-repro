@@ -1,0 +1,18 @@
+{
+  "name": "testcafe-issue-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/krzempekk/testcafe-issue-repro",
+  "author": "Kamil Krzempek <kkrzempek@guidewire.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:shell": "serve -s ./public/shell -p 4000",
+    "start:mfe": "serve -s ./public/mfe -p 4001",
+    "test": "testcafe chrome ./tests/test.js",
+    "test:no-native": "testcafe chrome ./tests/test.js --disable-native-automation"
+  },
+  "dependencies": {
+    "serve": "^14.2.1",
+    "testcafe": "^3.5.0"
+  }
+}
